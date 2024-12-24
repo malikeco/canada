@@ -95,7 +95,8 @@ dynardl lnco2 lnnrec lncons lnmfg lngdp, lags(1, 1, 1, 1, 1) diffs(., 1, 1, 1, 1
 est store t1
 esttab
 parmby "xi:dynardl lnco2 lnnrec lncons lnmfg lngdp, lags(1, 1, 1, 1, 1) diffs(., 1, 1, 1, 1) shockvar(lnnrec) nocons ec shockval(-10) time(10) range(30) graph change sims(5000)", label norestore
-
+*Fig 7
+dynardl lnco2 lnnrec lncons lnmfg lngdp, lags(1, 1, 1, 1, 1) diffs(., 1, 1, 1, 1) shockvar(lnnrec) nocons ec shockval(-10) time(10) range(30) graph change sims(5000)
 **Fig 6
 sencode parm, gene(parmid)
 eclplot estimate min95 max95 parmid
